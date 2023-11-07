@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechZone - Componentes de computadora</title>
+
+    <!-- BootsTrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- BoxIcons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <!-- JavaScript para funcionamiento de la navegación de celular -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuBtn = document.getElementById("menuBtn")
+            const menu = document.getElementById("menu")
+            const btnCloseMenu = document.getElementById("btnCloseMenu")
+
+            menuBtn.addEventListener("click", () => {
+                menu.classList.add("flex")
+                menu.classList.remove("hidden")
+                console.log("hola")
+            })
+
+            btnCloseMenu.addEventListener("click", () => {
+                menu.classList.add("hidden")
+                menu.classList.remove("flex")
+                console.log("hola")
+            })
+        })
+    </script>
+
+</head>
+
+<body>
+    <header class="header" id="header">
+        <h2 class="header__title">
+            <a href="../index.html">
+                <img src="../assets/images/logo/logo.png" alt="Logo de TechZone">
+            </a>
+        </h2>
+        <nav>
+            <ul class="header__navlist">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./computadoras.html">Computadoras</a></li>
+                <li><a href="./componentes.html">Componentes</a></li>
+                <li><a href="./accesorios.html">Accesorios</a></li>
+                <li><a href="./sucursales.html">Sucursales</a></li>
+                <li><a href="./contacto.html">Contáctanos</a></li>
+                <li><a href="./quienes-somos.html">Quienes somos?</a></li>
+            </ul>
+            <button id="menuBtn" class="header__navmobilemenu">
+                <i class="bx bx-menu"></i>
+            </button>
+        </nav>
+    </header>
+    <main class="main">
+        <header class="main__header">
+            <h1 class="main__header__title">Componentes</h1>
+            <search>
+                <form class="main__header__form">
+                    <input type="text" name="query" id="search" placeholder="Algo específico? Búscalo!">
+                    <button>Buscar</button>
+                </form>
+            </search>
+        </header>
+        <section class="main__productcontainer">
+            <div>
+                <h2 class="main__productcontainer__title">Procesadores</h2>
+                <section class="main__productcontainer__section__cardcontent">
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../assets/images/componentes/procesadores/intel-celeron.webp" alt="Procesador intel">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Procesador intel celeron</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../assets/images/componentes/procesadores/intel-i3.webp" alt="Procesador intel">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Procesador intel i3 - novena generación</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../assets/images/componentes/procesadores/intel-i5.webp" alt="Procesador intel">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Procesador intel i5 - novena generación</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../assets/images/componentes/procesadores/intel-i7.webp" alt="Procesador intel">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Procesador intel i7 - novena generación</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../assets/images/componentes/procesadores/intel-i9.webp" alt="Procesador intel">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Procesador intel i9 - novena generación</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../assets/images/componentes/procesadores/amd-3.jpg" alt="Procesador amd">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Procesador AMD Ryzen 3 - tercera generación</h3>
+                        </div>
+                    </article>
+                </section>
+            </div>
+            <div>
+                <h2 class="main__productcontainer__title">Placas madre</h2>
+                <section class="main__productcontainer__section__cardcontent">
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../assets/images/componentes/placas-madre/placa-madre-amd-1.webp" alt="Placa madre">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Placa madre para procesador AMD Ryzen</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../assets/images/componentes/placas-madre/placa-madre-amd-2.webp" alt="Placa madre">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Placa madre para procesador AMD Ryzen</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../assets/images/componentes/placas-madre/placa-madre-amd-3.webp" alt="Placa madre">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Placa madre para procesador AMD Ryzen</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../assets/images/componentes/placas-madre/placa-madre-amd-4.webp" alt="Placa madre">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Placa madre para procesador AMD Ryzen</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../assets/images/componentes/placas-madre/placa-madre-intel-1.webp" alt="Placa madre">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Placa madre para procesador intel</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../assets/images/componentes/placas-madre/placa-madre-intel-2.webp" alt="Placa madre">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Placa madre para procesador intel</h3>
+                        </div>
+                    </article>
+                </section>
+            </div>
+            <div>
+                <h2 class="main__productcontainer__title">Memorias Ram</h2>
+                <section class="main__productcontainer__section__cardcontent">
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../assets/images/componentes/memorias-ram/memoria-ram-1.webp" alt="Memoria ram">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Memoria ram</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../assets/images/componentes/memorias-ram/memoria-ram-2.webp" alt="Memoria ram">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Memoria ram</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../assets/images/componentes/memorias-ram/memoria-ram-3.webp" alt="Memoria ram">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Memoria ram</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../assets/images/componentes/memorias-ram/memoria-ram-4.webp" alt="Memoria ram">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Memoria ram</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../assets/images/componentes/memorias-ram/memoria-ram-5.webp" alt="Memoria ram">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Memoria ram</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../assets/images/componentes/memorias-ram/memoria-ram-6.webp" alt="Memoria ram">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Memoria ram</h3>
+                        </div>
+                    </article>
+                </section>
+            </div>
+            <div>
+                <h2 class="main__productcontainer__title">Almacenamiento</h2>
+                <section class="main__productcontainer__section__cardcontent">
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../assets/images/componentes/almacenamiento/hdd-1.webp" alt="Almacenamiento hdd">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Almacenamiento HDD</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../assets/images/componentes/almacenamiento/hdd-2.webp" alt="Almacenamiento hdd">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Almacenamiento HDD</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../assets/images/componentes/almacenamiento/hdd-3.webp" alt="Almacenamiento hdd">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Almacenamiento HDD</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../assets/images/componentes/almacenamiento/hdd-4.webp" alt="Almacenamiento hdd">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Almacenamiento HDD</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../assets/images/componentes/almacenamiento/ssd-1.webp" alt="Almacenamiento ssd">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Almacenamiento SSD</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../assets/images/componentes/almacenamiento/ssd-2.webp" alt="Almacenamiento sdd">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Almacenamiento SSD</h3>
+                        </div>
+                    </article>
+                </section>
+            </div>
+            <div>
+                <h2 class="main__productcontainer__title">Gabinetes</h2>
+                <section class="main__productcontainer__section__cardcontent">
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../assets/images/componentes/gabinetes/gabinete-1.webp" alt="Gabinete gamer">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Gabinete</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../assets/images/componentes/gabinetes/gabinete-2.webp" alt="Gabinete gamer">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Gabinete</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../assets/images/componentes/gabinetes/gabinete-3.webp" alt="Gabinete gamer">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Gabinete</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../assets/images/componentes/gabinetes/gabinete-4.webp" alt="Gabinete gamer">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Gabinete</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../assets/images/componentes/gabinetes/gabinete-5.webp" alt="Gabinete gamer">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Gabinete</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../assets/images/componentes/gabinetes/gabinete-6.webp" alt="Gabinete gamer">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Gabinete</h3>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </section>
+        <a href="#header" class="main__volver btn btn-primary">
+            Volver arriba
+        </a>
+    </main>
+    <aside id="menu" class="mobilemenu">
+        <button id="btnCloseMenu" class="mobilemenu__button">
+            <i class='bx bx-x-circle'></i>
+        </button>
+        <ul>
+            <li class="mobilemenu__list"><a href="../index.html">Inicio</a></li>
+            <li class="mobilemenu__list"><a href="./computadoras.html">Computadoras</a></li>
+            <li class="mobilemenu__list"><a href="./componentes.html">Componentes</a></li>
+            <li class="mobilemenu__list"><a href="./accesorios.html">Accesorios</a></li>
+            <li class="mobilemenu__list"><a href="./sucursales.html">Sucursales</a></li>
+            <li class="mobilemenu__list"><a href="./contacto.html">Contáctanos</a></li>
+            <li class="mobilemenu__list"><a href="./quienes-somos.html">Quienes somos</a></li>
+        </ul>
+    </aside>
+    <footer class="footer">
+        <section class="footer__redes">
+            <h2 class="footer__redes__title">Redes sociales</h2>
+            <ul class="footer__redes__list">
+                <li>
+                    <img src="../assets/images/iconos/instagram-icon.png" alt="Icono de instagram"
+                        class="footer__redes__list__icon">
+                    Instagram
+                </li>
+                <li>
+                    <img src="../assets/images/iconos/twitter-icon.png" alt="Icono de twitter"
+                        class="footer__redes__list__icon">
+                    Twitter
+                </li>
+            </ul>
+        </section>
+        <article class="footer__others">
+            <h2 class="footer__others__title">Redes sociales</h2>
+            <ul class="footer__others__list">
+                <li>
+                    GitHub
+                    <img src="../assets/images/iconos/github-icon.png" alt="Icono de GitHub"
+                        class="footer__others__list__icon">
+                </li>
+                <li>
+                    LinkedIn
+                    <img src="../assets/images/iconos/linkedin-icon.png" alt="Icono de GitHun"
+                        class="footer__others__list__icon">
+                </li>
+            </ul>
+        </article>
+        <small class="footer__owner">Created by <span class="footer__owner__name">Santiago Mustafa Font</span></small>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechZone</title>
+
+    <!-- BootsTrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- BoxIcons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <!-- JavaScript para funcionamiento de la navegación de celular -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuBtn = document.getElementById("menuBtn")
+            const menu = document.getElementById("menu")
+            const btnCloseMenu = document.getElementById("btnCloseMenu")
+
+            menuBtn.addEventListener("click", () => {
+                menu.classList.add("flex")
+                menu.classList.remove("hidden")
+                console.log("hola")
+            })
+
+            btnCloseMenu.addEventListener("click", () => {
+                menu.classList.add("hidden")
+                menu.classList.remove("flex")
+                console.log("hola")
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <h2 class="header__title">
+            <a href="../index.html">
+                <img src="../assets/images/logo/logo.png" alt="Logo de TechZone">
+            </a>
+        </h2>
+        <nav>
+            <ul class="header__navlist">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./computadoras.html">Computadoras</a></li>
+                <li><a href="./componentes.html">Componentes</a></li>
+                <li><a href="./accesorios.html">Accesorios</a></li>
+                <li><a href="./sucursales.html">Sucursales</a></li>
+                <li><a href="./contacto.html">Contáctanos</a></li>
+                <li><a href="./quienes-somos.html">Quienes somos?</a></li>
+            </ul>
+            <button id="menuBtn" class="header__navmobilemenu">
+                <i class="bx bx-menu"></i>
+            </button>
+        </nav>
+    </header>
+    <main class="main">
+        <header class="main__header">
+            <h1 class="main__header__title">TechZone: Líder en Tecnología en Argentina</h1>
+            <div class="main__header__experiencia">
+                <p>Tenemos más de 12 años de experiencia en el mercado argentino</p>
+                <p>Nuestra misión es brindar a nuestros clientes las últimas y mejores soluciones tecnológicas.</p>
+            </div>
+        </header>
+        <section class="main__nosotros">
+            <article class="main__nosotros__article">
+                <details>
+                    <summary class="main__nosotros__article__title">Nuestro Compromiso como empresa</summary>
+                    <ul class="main__nosotros__article__list">
+                        <li><span>Calidad</span>: productos de alta calidad de las mejores marcas</li>
+                        <li>
+                            <span>Variedad</span>: Amplia gama de productos para satisfacer todas las necesidades de
+                            nuestros clientes.
+                        </li>
+                        <li>
+                            <span>Soporte Técnico</span>: Servicio de atención al cliente y soporte pos-venta.
+                        </li>
+                        <li>
+                            <span>Innovación</span>: Siempre a la vanguardia de la tecnología.
+                        </li>
+                    </ul>
+                </details>
+            </article>
+            <article class="main__nosotros__article">
+                <details>
+                    <summary class="main__nosotros__article__title">Nuestros Logros</summary>
+                    <ul class="main__nosotros__article__list">
+                        <li>Ser la empresa líder en ventas de productos tecnológicos en Argentina.</li>
+                        <li>Reconocimiento de clientes satisfechos.</li>
+                        <li>Contribuciones a la industria tecnológica local.</li>
+                    </ul>
+                </details>
+            </article>
+            <article class="main__nosotros__article">
+                <details>
+                    <summary class="main__nosotros__article__title">Nuestra Visión</summary>
+                    <ul class="main__nosotros__article__list">
+                        <li>Continuar siendo líderes en el mercado de la tecnología Argentina.</li>
+                        <li>Expandir nuestras ofertas de productos y servicios.</li>
+                        <li>Innovar y adaptarnos a las tendencias tecnológicas cambiantes.</li>
+                    </ul>
+                </details>
+            </article>
+            <article class="main__nosotros__article">
+                <details>
+                    <summary class="main__nosotros__article__title">Nuestro Compromiso Social</summary>
+                    <ul class="main__nosotros__article__list">
+                        <li>
+                            <span>Programa de reciclaje de equipos electrónicos</span>:TechZone se compromete a ser una
+                            empresa ambientalmente responsable. Establecer un programa de reciclaje de equipos
+                            electrónicos es una forma de lograrlo. La empresa podría ofrecer a los clientes la opción de
+                            devolver sus dispositivos electrónicos antiguos, como computadoras, impresoras o teléfonos
+                            móviles, para su reciclaje adecuado. Esto ayuda a reducir la cantidad de desechos
+                            electrónicos peligrosos y promueve la reutilización de materiales valiosos.
+                        </li>
+                        <li>
+                            <span>Apoyo a la educación tecnológica:</span> TechZone podría comprometerse a apoyar la
+                            educación tecnológica en la comunidad. Esto podría incluir la donación de equipos
+                            informáticos a escuelas locales, la organización de talleres gratuitos de tecnología para
+                            estudiantes o la creación de becas para estudiantes de tecnología. Fomentar la educación en
+                            tecnología no solo beneficia a la comunidad al mejorar las habilidades de los jóvenes, sino
+                            que también contribuye a la formación de futuros profesionales en el campo de la tecnología.
+                        </li>
+                    </ul>
+                </details>
+            </article>
+            <article class="main__nosotros__article">
+                <details>
+                    <summary class="main__nosotros__article__title">Preguntas frecuentes</summary>
+                    <ul class="main__nosotros__article__list">
+                        <li>
+                            <p>
+                                ¿Qué marcas de productos tecnológicos ofrecen en TechZone?
+                            </p>
+                            <p>
+                                Ofrecemos todas las marcas nacionales del mercado Argentino para potenciar el mercado
+                                interno.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                ¿Tienen productos de marcas reconocidas internacionalmente?
+                            </p>
+                            <p>
+                                Si, siempre tratamos de tener la mayor variedad de marcas para que nuestros clientes
+                                encuentren lo que quieren y queden satisfechos de nuestro servicio.
+                            </p>
+                        </li>
+                    </ul>
+                </details>
+            </article>
+            <article class="main__nosotros__article">
+                <details>
+                    <summary class="main__nosotros__article__title">Testimonio de clientes</summary>
+                    <ul class="main__nosotros__article__list">
+                        <li>María G.: "TechZone me ha proporcionado la mejor experiencia de compra en tecnología. Sus
+                            productos son de alta calidad y su servicio al cliente es impecable."</li>
+                        <li>Juan M.: "No puedo estar más satisfecho con mi compra en TechZone. Encontré exactamente lo
+                            que necesitaba a un precio competitivo."</li>
+                        <li>Laura R.: "El soporte técnico de TechZone resolvió rápidamente mi problema con una sonrisa.
+                            Son realmente expertos en tecnología."</li>
+                        <li>Diego P.: "TechZone no solo vende productos, vende soluciones. Me ayudaron a encontrar la
+                            configuración perfecta para mi PC gaming."</li>
+                        <li>Marta S.: "Recomiendo TechZone a todos mis amigos. La variedad de productos y la atención al
+                            cliente son excepcionales."</li>
+                        <li>Carlos H.: "Siempre compro mis componentes de PC en TechZone. Sus precios son excelentes y
+                            la entrega es puntual."</li>
+                        <li>Ana L.: "TechZone se preocupa por la comunidad. Su programa de reciclaje de equipos
+                            electrónicos es una iniciativa loable."</li>
+                        <li>Luis B.: "TechZone ha sido mi fuente confiable para las últimas novedades tecnológicas.
+                            Nunca me han decepcionado."</li>
+                        <li>Sofía V.: "La visión de TechZone de contribuir a la educación tecnológica es inspiradora.
+                            Gracias por su apoyo a las escuelas locales."</li>
+                        <li>Eduardo G.:
+                            "Recientemente adquirí una tarjeta gráfica de alta gama en TechZone, y no puedo estar más
+                            contento con mi compra. La entrega fue rápida, y el producto funcionó perfectamente desde el
+                            primer día. La amplia selección de productos y la atención al cliente de TechZone me hacen
+                            sentir seguro de que siempre encontraré lo que necesito a precios competitivos."</li>
+                        <li>Carolina R.:
+                            "Hace unos meses compré una computadora portátil para trabajar desde casa en TechZone, y ha
+                            sido una inversión increíble. La calidad del equipo es excepcional, y ha mejorado
+                            significativamente mi productividad. Además, el servicio de atención al cliente de TechZone
+                            respondió amablemente a todas mis preguntas antes de la compra. Definitivamente recomendaría
+                            TechZone a cualquier persona que busque productos tecnológicos de alta calidad y un servicio
+                            excepcional."</li>
+                    </ul>
+                </details>
+            </article>
+        </section>
+    </main>
+    <aside id="menu" class="mobilemenu">
+        <button id="btnCloseMenu" class="mobilemenu__button">
+            <i class='bx bx-x-circle'></i>
+        </button>
+        <ul>
+            <li class="mobilemenu__list"><a href="../index.html">Inicio</a></li>
+            <li class="mobilemenu__list"><a href="./computadoras.html">Computadoras</a></li>
+            <li class="mobilemenu__list"><a href="./componentes.html">Componentes</a></li>
+            <li class="mobilemenu__list"><a href="./accesorios.html">Accesorios</a></li>
+            <li class="mobilemenu__list"><a href="./sucursales.html">Sucursales</a></li>
+            <li class="mobilemenu__list"><a href="./contacto.html">Contáctanos</a></li>
+            <li class="mobilemenu__list"><a href="./quienes-somos.html">Quienes somos</a></li>
+        </ul>
+    </aside>
+    <footer class="footer">
+        <section class="footer__redes">
+            <h2 class="footer__redes__title">Redes sociales</h2>
+            <ul class="footer__redes__list">
+                <li>
+                    <img src="../assets/images/iconos/instagram-icon.png" alt="Icono de instagram"
+                        class="footer__redes__list__icon">
+                    Instagram
+                </li>
+                <li>
+                    <img src="../assets/images/iconos/twitter-icon.png" alt="Icono de twitter"
+                        class="footer__redes__list__icon">
+                    Twitter
+                </li>
+            </ul>
+        </section>
+        <article class="footer__others">
+            <h2 class="footer__others__title">Redes sociales</h2>
+            <ul class="footer__others__list">
+                <li>
+                    GitHub
+                    <img src="../assets/images/iconos/github-icon.png" alt="Icono de GitHub"
+                        class="footer__others__list__icon">
+                </li>
+                <li>
+                    LinkedIn
+                    <img src="../assets/images/iconos/linkedin-icon.png" alt="Icono de GitHun"
+                        class="footer__others__list__icon">
+                </li>
+            </ul>
+        </article>
+        <small class="footer__owner">Created by <span class="footer__owner__name">Santiago Mustafa</span></small>
+    </footer>
+</body>
+
+</html>

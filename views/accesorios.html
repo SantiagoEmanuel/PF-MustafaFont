@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechZone - Accesorios de Computadora</title>
+
+    <!-- BootsTrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- BoxIcons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <!-- JavaScript para funcionamiento de la navegación de celular -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuBtn = document.getElementById("menuBtn")
+            const menu = document.getElementById("menu")
+            const btnCloseMenu = document.getElementById("btnCloseMenu")
+
+            menuBtn.addEventListener("click", () => {
+                menu.classList.add("flex")
+                menu.classList.remove("hidden")
+                console.log("hola")
+            })
+
+            btnCloseMenu.addEventListener("click", () => {
+                menu.classList.add("hidden")
+                menu.classList.remove("flex")
+                console.log("hola")
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <h2 class="header__title">
+            <a href="../index.html">
+                <img src="../assets/images/logo/logo.png" alt="Logo de TechZone">
+            </a>
+        </h2>
+        <nav>
+            <ul class="header__navlist">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./computadoras.html">Computadoras</a></li>
+                <li><a href="./componentes.html">Componentes</a></li>
+                <li><a href="./accesorios.html">Accesorios</a></li>
+                <li><a href="./sucursales.html">Sucursales</a></li>
+                <li><a href="./contacto.html">Contáctanos</a></li>
+                <li><a href="./quienes-somos.html">Quienes somos?</a></li>
+            </ul>
+            <button id="menuBtn" class="header__navmobilemenu">
+                <i class="bx bx-menu"></i>
+            </button>
+        </nav>
+    </header>
+    <main class="main">
+        <header class="main__header">
+            <h1 class="main__header__title">Accesorios de computadora</h1>
+            <search role="search">
+                <form class="main__header__form">
+                    <input type="text" name="query" id="search" placeholder="Algo específico? Búscalo!">
+                    <button>
+                        Buscar
+                    </button>
+                </form>
+            </search>
+        </header>
+        <section class="main__productcontainer">
+            <div>
+                <h2 class="main__productcontainer__title">Auriculares</h2>
+                <section class="main__productcontainer__section__cardcontent">
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../imagenes/accesorios/auriculares/auricular-1.webp" alt="Auriculares gamers">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Auriculares HyperX, luz rgb, con micrófono inalámbrico</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../imagenes/accesorios/auriculares/auricular-2.webp" alt="Auriculares gamers">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Auriculares gamers, con micrófono, regulador de volumen</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../imagenes/accesorios/auriculares/auricular-3.webp" alt="Auriculares gamers">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Auriculares gamers HyperX, PS4 con micrófono</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../imagenes/accesorios/auriculares/auricular-4.webp" alt="Auriculares gamers">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Auriculares con rgb, micrófono flexible y cable flexible</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../imagenes/accesorios/auriculares/auricular-5.webp" alt="Auriculares gamers">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Auriculares RedDragon, micrófono flexible, con controlador de mano</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../imagenes/accesorios/auriculares/auricular-9.webp" alt="Auriculares gamers">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Auriculares Apple AirPods Max, inalámbrico.</h3>
+                        </div>
+                    </article>
+                </section>
+            </div>
+            <div>
+                <h2 class="main__productcontainer__title">Teclados</h2>
+                <section class="main__productcontainer__section__cardcontent">
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../imagenes/accesorios/teclados/teclado-1.webp" alt="Teclados gamers">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Teclado mecánico 60% blanco rgb dinámico cherry red</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../imagenes/accesorios/teclados/teclado-2.webp" alt="Teclados gamers">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Teclado mecánico 80% negro rgb cherry brown</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../imagenes/accesorios/teclados/teclado-3.webp" alt="Teclados gamers">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Teclado mecánico Logitech con teclas funciones rgb</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../imagenes/accesorios/teclados/teclado-4.webp" alt="Teclados gamers">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Teclado mecánico con apoya muñeca rgb cherry brown</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../imagenes/accesorios/teclados/teclado-5.webp" alt="Teclados gamers">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Teclado mecánico gamer con tecla funciones</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../imagenes/accesorios/teclados/teclado-6.webp" alt="Teclados gamers">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Teclado mecánico RedDragon 80% negro cherry blue rgb dinámico</h3>
+                        </div>
+                    </article>
+                </section>
+            </div>
+            <div>
+                <h2 class="main__productcontainer__title">Ratones</h2>
+                <section class="main__productcontainer__section__cardcontent">
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../imagenes/accesorios/ratones/raton-1.webp" alt="Ratón gamer">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Ratón gamer Logitech inalámbrico 7 botones blanco</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../imagenes/accesorios/ratones/raton-2.webp" alt="Ratón gamer">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Ratón gamer Logitech 17 botones negro</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../imagenes/accesorios/ratones/raton-3.webp" alt="Ratón gamer">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Ratón gamer AOC 6 botones rgb cable mallado negro</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../imagenes/accesorios/ratones/raton-4.webp" alt="Ratón gamer">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Ratón gamer Corsair 16 botones rgb negro</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../imagenes/accesorios/ratones/raton-5.webp" alt="Ratón gamer">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Ratón gamer HyperX 7 botones rgb negro</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../imagenes/accesorios/ratones/raton-6.webp" alt="Ratón gamer">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Ratón gamer Logitech super liviano rgb negro</h3>
+                        </div>
+                    </article>
+                </section>
+            </div>
+            <div>
+                <h2 class="main__productcontainer__title">Monitores</h2>
+                <section class="main__productcontainer__section__cardcontent">
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../imagenes/accesorios/monitores/monitor-1.webp" alt="Monitores">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Monitor Samsung led 144hz 32"</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../imagenes/accesorios/monitores/monitor-2.webp" alt="Monitores">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Monitor Asus Oled 144hz 36"</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../imagenes/accesorios/monitores/monitor-3.webp" alt="Monitores">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Monitor Asus Oled 1ms 240hz 27"</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../imagenes/accesorios/monitores/monitor-4.webp" alt="Monitores">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Monitor LG UltraWide 120hz oled</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../imagenes/accesorios/monitores/monitor-5.webp" alt="Monitores">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Monitor Zowie ips 1ms 244hz</h3>
+                        </div>
+                    </article>
+                    <article class="main__productcontainer__section__cardcontent__card">
+                        <img src="../imagenes/accesorios/monitores/monitor-6.webp" alt="Monitores">
+                        <div class="main__productcontainer__section__cardcontent__card__info">
+                            <h3>Monitor MSI UltraWide 244hz rgb</h3>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </section>
+        <a href="#header" class="main__volver btn btn-primary">Volver arriba</a>
+    </main>
+    <aside id="menu" class="mobilemenu">
+        <button id="btnCloseMenu" class="mobilemenu__button">
+            <i class='bx bx-x-circle'></i>
+        </button>
+        <ul>
+            <li class="mobilemenu__list"><a href="../index.html">Inicio</a></li>
+            <li class="mobilemenu__list"><a href="./computadoras.html">Computadoras</a></li>
+            <li class="mobilemenu__list"><a href="./componentes.html">Componentes</a></li>
+            <li class="mobilemenu__list"><a href="./accesorios.html">Accesorios</a></li>
+            <li class="mobilemenu__list"><a href="./sucursales.html">Sucursales</a></li>
+            <li class="mobilemenu__list"><a href="./contacto.html">Contáctanos</a></li>
+            <li class="mobilemenu__list"><a href="./quienes-somos.html">Quienes somos</a></li>
+        </ul>
+    </aside>
+    <footer class="footer">
+        <section class="footer__redes">
+            <h2 class="footer__redes__title">Redes sociales</h2>
+            <ul class="footer__redes__list">
+                <li>
+                    <img src="../assets/images/iconos/instagram-icon.png" alt="Icono de instagram"
+                        class="footer__redes__list__icon">
+                    Instagram
+                </li>
+                <li>
+                    <img src="../assets/images/iconos/twitter-icon.png" alt="Icono de twitter"
+                        class="footer__redes__list__icon">
+                    Twitter
+                </li>
+            </ul>
+        </section>
+        <article class="footer__others">
+            <h2 class="footer__others__title">Redes sociales</h2>
+            <ul class="footer__others__list">
+                <li>
+                    GitHub
+                    <img src="../assets/images/iconos/github-icon.png" alt="Icono de GitHub"
+                        class="footer__others__list__icon">
+                </li>
+                <li>
+                    LinkedIn
+                    <img src="../assets/images/iconos/linkedin-icon.png" alt="Icono de GitHun"
+                        class="footer__others__list__icon">
+                </li>
+            </ul>
+        </article>
+        <small class="footer__owner">Created by <span class="footer__owner__name">Santiago Mustafa</span></small>
+    </footer>
+</body>
+
+</html>

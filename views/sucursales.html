@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechZone</title>
+
+    <!-- BootsTrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- BoxIcons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <!-- JavaScript para funcionamiento de la navegación de celular -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuBtn = document.getElementById("menuBtn")
+            const menu = document.getElementById("menu")
+            const btnCloseMenu = document.getElementById("btnCloseMenu")
+
+            menuBtn.addEventListener("click", () => {
+                menu.classList.add("flex")
+                menu.classList.remove("hidden")
+                console.log("hola")
+            })
+
+            btnCloseMenu.addEventListener("click", () => {
+                menu.classList.add("hidden")
+                menu.classList.remove("flex")
+                console.log("hola")
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <h2 class="header__title">
+            <a href="../index.html">
+                <img src="../assets/images/logo/logo.png" alt="Logo de TechZone">
+            </a>
+        </h2>
+        <nav>
+            <ul class="header__navlist">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./computadoras.html">Computadoras</a></li>
+                <li><a href="./componentes.html">Componentes</a></li>
+                <li><a href="./accesorios.html">Accesorios</a></li>
+                <li><a href="./sucursales.html">Sucursales</a></li>
+                <li><a href="./contacto.html">Contáctanos</a></li>
+                <li><a href="./quienes-somos.html">Quienes somos?</a></li>
+            </ul>
+            <button id="menuBtn" class="header__navmobilemenu">
+                <i class="bx bx-menu"></i>
+            </button>
+        </nav>
+    </header>
+    <main class="main">
+        <header class="main__header">
+            <h1 class="main__header__title">Nuestras sucursales</h1>
+            <p>Tenemos 3 sucursales en el país, cada una cuenta con la mejor tecnología, además de contar con las
+                mejores
+                instalaciones para proporcionarte la mejor ayuda posible.</p>
+            <p>Tenemos los mejores horarios de atención: 9:00hs - 20:00hs</p>
+        </header>
+        <section class="main__sucursales">
+            <article class="main__sucursales__sucursal">
+                <h2 class="main__sucursales__sucursal__title">Córdoba</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108977.23899160055!2d-64.27661267514317!3d-31.399280322359722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2zQ8OzcmRvYmE!5e0!3m2!1ses-419!2sar!4v1697138195483!5m2!1ses-419!2sar"
+                    width="350" height="300" style="border:0;" allowfullscreen="off" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>Av. General Belgrano 95843</p>
+            </article>
+            <article class="main__sucursales__sucursal">
+                <h2 class="main__sucursales__sucursal__title">Buenos Aires</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.45340211764!2d-58.51569865212594!3d-34.61565477020296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1697138272075!5m2!1ses-419!2sar"
+                    width="350" height="300" style="border:0;" allowfullscreen="off" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>Av. General Paz 19863</p>
+            </article>
+            <article class="main__sucursales__sucursal">
+                <h2 class="main__sucursales__sucursal__title">Santiago del Estero</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56468.2296310028!2d-64.3082477769138!3d-27.801632764292016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943b526adf33f96b%3A0x9a9d18ed7764c8d6!2sSantiago%20del%20Estero!5e0!3m2!1ses-419!2sar!4v1697138308681!5m2!1ses-419!2sar"
+                    width="350" height="300" style="border:0;" allowfullscreen="off" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>Av. colon 1010101</p>
+            </article>
+        </section>
+    </main>
+    <aside id="menu" class="mobilemenu">
+        <button id="btnCloseMenu" class="mobilemenu__button">
+            <i class='bx bx-x-circle'></i>
+        </button>
+        <ul>
+            <li class="mobilemenu__list"><a href="../index.html">Inicio</a></li>
+            <li class="mobilemenu__list"><a href="./computadoras.html">Computadoras</a></li>
+            <li class="mobilemenu__list"><a href="./componentes.html">Componentes</a></li>
+            <li class="mobilemenu__list"><a href="./accesorios.html">Accesorios</a></li>
+            <li class="mobilemenu__list"><a href="./sucursales.html">Sucursales</a></li>
+            <li class="mobilemenu__list"><a href="./contacto.html">Contáctanos</a></li>
+            <li class="mobilemenu__list"><a href="./quienes-somos.html">Quienes somos</a></li>
+        </ul>
+    </aside>
+    <footer class="footer">
+        <section class="footer__redes">
+            <h2 class="footer__redes__title">Redes sociales</h2>
+            <ul class="footer__redes__list">
+                <li>
+                    <img src="../assets/images/iconos/instagram-icon.png" alt="Icono de instagram"
+                        class="footer__redes__list__icon">
+                    Instagram
+                </li>
+                <li>
+                    <img src="../assets/images/iconos/twitter-icon.png" alt="Icono de twitter"
+                        class="footer__redes__list__icon">
+                    Twitter
+                </li>
+            </ul>
+        </section>
+        <article class="footer__others">
+            <h2 class="footer__others__title">Redes sociales</h2>
+            <ul class="footer__others__list">
+                <li>
+                    GitHub
+                    <img src="../assets/images/iconos/github-icon.png" alt="Icono de GitHub"
+                        class="footer__others__list__icon">
+                </li>
+                <li>
+                    LinkedIn
+                    <img src="../assets/images/iconos/linkedin-icon.png" alt="Icono de GitHun"
+                        class="footer__others__list__icon">
+                </li>
+            </ul>
+        </article>
+        <small class="footer__owner">Created by <span class="footer__owner__name">Santiago Mustafa</span></small>
+    </footer>
+</body>
+
+</html>

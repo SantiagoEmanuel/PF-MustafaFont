@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechZone - Contacto y Formas de Comunicación</title>
+
+    <!-- BootsTrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- BoxIcons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <!-- JavaScript para funcionamiento de la navegación de celular -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuBtn = document.getElementById("menuBtn")
+            const menu = document.getElementById("menu")
+            const btnCloseMenu = document.getElementById("btnCloseMenu")
+
+            menuBtn.addEventListener("click", () => {
+                menu.classList.add("flex")
+                menu.classList.remove("hidden")
+                console.log("hola")
+            })
+
+            btnCloseMenu.addEventListener("click", () => {
+                menu.classList.add("hidden")
+                menu.classList.remove("flex")
+                console.log("hola")
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <h2 class="header__title">
+            <a href="../index.html">
+                <img src="../assets/images/logo/logo.png" alt="Logo de TechZone">
+            </a>
+        </h2>
+        <nav>
+            <ul class="header__navlist">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./computadoras.html">Computadoras</a></li>
+                <li><a href="./componentes.html">Componentes</a></li>
+                <li><a href="./accesorios.html">Accesorios</a></li>
+                <li><a href="./sucursales.html">Sucursales</a></li>
+                <li><a href="./contacto.html">Contáctanos</a></li>
+                <li><a href="./quienes-somos.html">Quienes somos?</a></li>
+            </ul>
+            <button id="menuBtn" class="header__navmobilemenu">
+                <i class="bx bx-menu"></i>
+            </button>
+        </nav>
+    </header>
+    <main class="main">
+        <header class="main__header">
+            <h1 class="main__header__title">Formas de contacto</h1>
+        </header>
+        <section class="main__contactcontainer">
+            <article class="main__contactcontainer__contacts">
+                <ul>
+                    <li>⮞ WhatsApp: +54 11 1111 1111</li>
+                    <li>⮞ Instagram: @TechZone</li>
+                    <li>⮞ Facebook: @TechZone Arg</li>
+                </ul>
+            </article>
+            <form class="main__contactcontainer__form">
+                <fieldset class="main__contactcontainer__form__field">
+                    <legend class="main__contactcontainer__form__field__title">Formulario de contacto</legend>
+                    <div class="main__contactcontainer__form__field__fullname">
+                        <input type="text" name="nombre" placeholder="Nombre" required autocomplete="off">
+                        <input type="text" name="apellido" placeholder="Apellido" required autocomplete="off">
+                    </div>
+                    <input type="email" name="email" placeholder="TuCorreo@Electrónico.com" required autocomplete="off">
+                    <div class="main__contactcontainer__form__field__contenedorduda">
+                        <select name="duda" class="main__contactcontainer__form__field__contenedorduda__duda" required>
+                            <option value="default">Sobre qué es tu duda?</option>
+                            <option value="escritorio">Computadoras de escritorio</option>
+                            <option value="notebooks">Computadoras notebooks</option>
+                            <option value="todo-en-uno">Computadoras todo en uno</option>
+                            <option value="componentes">Componentes de computadora</option>
+                            <option value="accesorios">Accesorios de computadora</option>
+                        </select>
+                    </div>
+                    <textarea name="mensaje" cols="30" rows="10" placeholder="Tu mensaje con la duda que tengas"
+                        required autocomplete="off"></textarea>
+                    <button>Enviar</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <aside id="menu" class="mobilemenu">
+        <button id="btnCloseMenu" class="mobilemenu__button">
+            <i class='bx bx-x-circle'></i>
+        </button>
+        <ul>
+            <li class="mobilemenu__list"><a href="../index.html">Inicio</a></li>
+            <li class="mobilemenu__list"><a href="./computadoras.html">Computadoras</a></li>
+            <li class="mobilemenu__list"><a href="./componentes.html">Componentes</a></li>
+            <li class="mobilemenu__list"><a href="./accesorios.html">Accesorios</a></li>
+            <li class="mobilemenu__list"><a href="./sucursales.html">Sucursales</a></li>
+            <li class="mobilemenu__list"><a href="./contacto.html">Contáctanos</a></li>
+            <li class="mobilemenu__list"><a href="./quienes-somos.html">Quienes somos</a></li>
+        </ul>
+    </aside>
+    <footer class="footer">
+        <section class="footer__redes">
+            <h2 class="footer__redes__title">Redes sociales</h2>
+            <ul class="footer__redes__list">
+                <li>
+                    <img src="../assets/images/iconos/instagram-icon.png" alt="Icono de instagram"
+                        class="footer__redes__list__icon">
+                    Instagram
+                </li>
+                <li>
+                    <img src="../assets/images/iconos/twitter-icon.png" alt="Icono de twitter"
+                        class="footer__redes__list__icon">
+                    Twitter
+                </li>
+            </ul>
+        </section>
+        <article class="footer__others">
+            <h2 class="footer__others__title">Redes sociales</h2>
+            <ul class="footer__others__list">
+                <li>
+                    GitHub
+                    <img src="../assets/images/iconos/github-icon.png" alt="Icono de GitHub"
+                        class="footer__others__list__icon">
+                </li>
+                <li>
+                    LinkedIn
+                    <img src="../assets/images/iconos/linkedin-icon.png" alt="Icono de GitHun"
+                        class="footer__others__list__icon">
+                </li>
+            </ul>
+        </article>
+        <small class="footer__owner">Created by <span class="footer__owner__name">Santiago Mustafa</span></small>
+    </footer>
+</body>
+
+</html>
