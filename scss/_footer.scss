@@ -1,0 +1,74 @@
+/* FOOTER */
+
+.footer {
+    height: 180px;
+    width: 100%;
+    padding: 1rem;
+    background-color: $color-secondary;
+    display: grid;
+    grid-template-areas: 'redes others' 'creator creator';
+
+}
+
+.footer__redes {
+    grid-area: redes;
+
+}
+
+.footer__redes__title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: $font-color;
+    padding-left: 1.4rem;
+}
+
+.footer__redes__list li {
+    list-style: none;
+    color: $font-color;
+    font-size: .875rem;
+    margin: 10px 0;
+
+}
+
+.footer__redes__list__icon {
+    width: 2rem;
+}
+
+.footer__others {
+    grid-area: others;
+    text-align: right;
+    padding-right: 1.5rem;
+
+}
+
+.footer__others__title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: $font-color;
+}
+
+.footer__others__list li {
+    list-style: none;
+    color: $font-color;
+    font-size: .875rem;
+    margin: 10px 0;
+    margin-right: 10px;
+
+}
+
+.footer__others__list__icon {
+    width: 2rem;
+}
+
+.footer__owner {
+    grid-area: creator;
+    text-align: center;
+    width: 100%;
+    color: $font-color;
+
+}
+
+.footer__owner__name {
+    color: $color-tertiary;
+    font-weight: 600;
+}

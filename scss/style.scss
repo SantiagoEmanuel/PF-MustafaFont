@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+$font-family: 'Poppins', sans-serif;
+$font-color: #fafafa;
+$color-secondary: #293241;
+$color-tertiary: #ee6c4d;
+$btn-padding: 6px 12px;
+
+// 
+* {
+    font-family: $font-family;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* POSICIONAMIENTO DE LAS SECCIONES HEADER - MAIN - FOOTER */
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        'header main'
+        'header main'
+        'footer footer';
+    grid-template-columns: 250px 1fr;
+    justify-items: center;
+}
+
+/* Ocultar la navegación para celular */
+
+.mobilemenu {
+    display: none;
+}
+
+@import "header", "main", "footer", "sucursales", "nosotros", "contacto", "querys";
+
+/* CSS de funcionamiento del Menu */
+.flex {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
