@@ -19,24 +19,7 @@
     <link rel="stylesheet" href="../CSS/style.css">
 
     <!-- JavaScript para funcionamiento de la navegación de celular -->
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const menuBtn = document.getElementById("menuBtn")
-            const menu = document.getElementById("menu")
-            const btnCloseMenu = document.getElementById("btnCloseMenu")
-
-            menuBtn.addEventListener("click", () => {
-                menu.classList.add("flex")
-                menu.classList.remove("hidden")
-                console.log("hola")
-            })
-
-            btnCloseMenu.addEventListener("click", () => {
-                menu.classList.add("hidden")
-                menu.classList.remove("flex")
-                console.log("hola")
-            })
-        })
+    <script src="../js/responsive-menu.js">
     </script>
 </head>
 
@@ -63,12 +46,13 @@
         </nav>
     </header>
     <main class="main">
-        <header class="main__header">
+        <header class="main__header main__header--border main__header--padding">
             <h1 class="main__header__title">Nuestras sucursales</h1>
-            <p>Tenemos 3 sucursales en el país, cada una cuenta con la mejor tecnología, además de contar con las
+            <p class="main__header__p">Tenemos 3 sucursales en el país, cada una cuenta con la mejor tecnología, además
+                de contar con las
                 mejores
                 instalaciones para proporcionarte la mejor ayuda posible.</p>
-            <p>Tenemos los mejores horarios de atención: 9:00hs - 20:00hs</p>
+            <p class="main__header__p">Tenemos los mejores horarios de atención: 9:00hs - 20:00hs</p>
         </header>
         <section class="main__sucursales">
             <article class="main__sucursales__sucursal">
@@ -101,15 +85,17 @@
         <button id="btnCloseMenu" class="mobilemenu__button">
             <i class='bx bx-x-circle'></i>
         </button>
-        <ul>
-            <li class="mobilemenu__list"><a href="../index.html">Inicio</a></li>
-            <li class="mobilemenu__list"><a href="./computadoras.html">Computadoras</a></li>
-            <li class="mobilemenu__list"><a href="./componentes.html">Componentes</a></li>
-            <li class="mobilemenu__list"><a href="./accesorios.html">Accesorios</a></li>
-            <li class="mobilemenu__list"><a href="./sucursales.html">Sucursales</a></li>
-            <li class="mobilemenu__list"><a href="./contacto.html">Contáctanos</a></li>
-            <li class="mobilemenu__list"><a href="./quienes-somos.html">Quienes somos</a></li>
-        </ul>
+        <nav>
+            <ul>
+                <li class="mobilemenu__list"><a href="../index.html">Inicio</a></li>
+                <li class="mobilemenu__list"><a href="./computadoras.html">Computadoras</a></li>
+                <li class="mobilemenu__list"><a href="./componentes.html">Componentes</a></li>
+                <li class="mobilemenu__list"><a href="./accesorios.html">Accesorios</a></li>
+                <li class="mobilemenu__list"><a href="./sucursales.html">Sucursales</a></li>
+                <li class="mobilemenu__list"><a href="./contacto.html">Contáctanos</a></li>
+                <li class="mobilemenu__list"><a href="./quienes-somos.html">Quienes somos</a></li>
+            </ul>
+        </nav>
     </aside>
     <footer class="footer">
         <section class="footer__redes">

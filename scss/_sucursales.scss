@@ -1,17 +1,22 @@
 /* SUCURSALES */
 
+.main__header--border {
+    border-bottom: 2px solid #999;
+}
+
+.main__header--padding {
+    padding-bottom: 2.5rem;
+}
+
 .main__sucursales {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     margin: 4rem 0;
-
 }
 
 .main__sucursales__sucursal {
-    width: 350px;
-    height: 550px;
-
+    @include box-size(350px, 550px);
 }
 
 .main__sucursales__sucursal__title {

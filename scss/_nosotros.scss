@@ -1,11 +1,10 @@
 /* NOSOTROS */
 
 .main__header__experiencia {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     gap: 1rem;
     border-top: 1px solid $color-secondary;
-    padding-top: 2rem;
+    padding: 2rem 0;
 
     p {
         margin: 0;
@@ -14,16 +13,14 @@
 }
 
 .main__nosotros {
-    width: 950px;
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
+    @include box-size(950px, 100%);
     gap: 1.5rem;
     margin-bottom: 4rem;
-
 }
 
 .main__nosotros__article {
-    width: 100%;
+    @include box-size(100%, 100%);
     border: 1px solid $color-secondary;
     padding: 1rem;
     border-radius: 5px;
@@ -32,13 +29,11 @@
 }
 
 .main__nosotros__article__title {
-    font-size: 1.5rem;
-    color: $font-color;
+    @include font-style(1.5rem, normal, $font-color);
 }
 
 .main__nosotros__article__list {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     gap: 1rem;
     margin-top: 1.5rem;
 

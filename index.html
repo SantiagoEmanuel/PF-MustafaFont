@@ -18,23 +18,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./CSS/style.css">
 
-    <!-- JavaScript para funcionamiento de la navegación de celular -->
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const menuBtn = document.getElementById("menuBtn")
-            const menu = document.getElementById("menu")
-            const closeMenuBtn = document.getElementById("btnCloseMenu")
-
-            menuBtn.addEventListener("click", () => {
-                menu.classList.add("flex")
-                menu.classList.remove("hidden")
-            })
-
-            closeMenuBtn.addEventListener("click", () => {
-                menu.classList.add("hidden")
-                menu.classList.remove("flex")
-            })
-        })
+    <!-- JavaScript para el funcionamiento de la navegación celular -->
+    <script src="./js/responsive-menu.js">
     </script>
 
     <!-- SEO -->
@@ -87,38 +72,33 @@
                 <section class="carousel-inner">
                     <article class="carousel-item active" data-bs-interval="10000">
                         <img src="./assets/images/index/promocion-1.jpg"
-                            alt="Precios rebajados en sillas gamers de la marca HHGEARS por tiempo limitado, ahora desde $68.900"
-                            title="Precios rebajados en sillas gamers de la marca HHEGARS por tiempo limitado, ahora desde $68.900"
-                            class="d-block w-100">
+                            alt="Banner de ofertas sobre sillas gamer de la marca HHGEARS"
+                            title="Banner de sillas en ofertas" class="d-block w-100">
                     </article>
                     <article class="carousel-item" data-bs-interval="2000">
                         <img src="./assets/images/index/promocion-2.jpg"
-                            alt="Precios rebajados en micrófonos HyperX - Cloud flight $67.450 y Quadcast $77.270"
-                            title="Precios rebajados en micrófonos HyperX - Cloud flight $67.450 y Quadcast $77.270"
-                            class="d-block w-100">
+                            alt="Banner de micrófonos HyperX - Cloud flight en oferta"
+                            title="Banner de micrófonos en oferta" class="d-block w-100">
                     </article>
                     <article class="carousel-item">
                         <img src="./assets/images/index/promocion-3.jpg"
-                            alt="Precios rebajados en productos seleccionados de Logitech - Volantes, telcados, mouses y auriculares"
-                            title="Precios rebajados en productos seleccionados de Logitech - Volantes, telcados, mouses y auriculares"
-                            class="d-block w-100">
+                            alt="Banner de ofertas de los productos Logitech - teclado, mouse, auricular y volante"
+                            title="Banner de productos Logitech en oferta" class="d-block w-100">
                     </article>
                     <article class="carousel-item">
                         <img src="./assets/images/index/promocion-4.jpg"
-                            alt="Promociones especiales en memorias RAM T-Force DELTA DDR4 RGB"
-                            title="Promociones especiales en memorias RAM T-Force DELTA DDR4 RGB" class="d-block w-100">
+                            alt="Banner de promociones de memorias RAM T-Force DELTA DDR4 RGB"
+                            title="Banner de memorias ram T-Force en oferta " class="d-block w-100">
                     </article>
                     <article class="carousel-item">
                         <img src="./assets/images/index/promocion-5.jpg"
-                            alt="Promociones especiales en placa madre ROG (Republic Of Gamers) Strix Z790-A"
-                            title="Promociones especiales en placa madre ROG (Republic Of Gamers) Strix Z790-A"
-                            class="d-block w-100">
+                            alt="Banner de placa madre ROG (Republic Of Gamers) STRIX Z790-A en oferta"
+                            title="Banner de placa madre ROG en oferta" class="d-block w-100">
                     </article>
                     <article class="carousel-item">
                         <img src="./assets/images/index/promocion-6.jpg"
-                            alt="Precios rebajados en monitores Samsung desde 43 pulgadas hasta 65 pulgadas"
-                            title="Precios rebajados en monitores Samsung desde 43 pulgadas hasta 65 pulgadas"
-                            class="d-block w-100">
+                            alt="Banner de precios rebajados en monitores Samsung desde 43 pulgadas hasta 65 pulgadas"
+                            title="Banner de ofertas en monitores específicos" class="d-block w-100">
                     </article>
                 </section>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
@@ -499,14 +479,16 @@
         <button id="btnCloseMenu" class="mobilemenu__button">
             <i class='bx bx-x-circle'></i>
         </button>
-        <ul>
-            <li class="mobilemenu__list"><a href="./views/computadoras.html">Computadoras</a></li>
-            <li class="mobilemenu__list"><a href="./views/componentes.html">Componentes</a></li>
-            <li class="mobilemenu__list"><a href="./views/accesorios.html">Accesorios</a></li>
-            <li class="mobilemenu__list"><a href="./views/sucursales.html">Sucursales</a></li>
-            <li class="mobilemenu__list"><a href="./views/contacto.html">Contáctanos</a></li>
-            <li class="mobilemenu__list"><a href="./views/quienes-somos.html">Quienes somos</a></li>
-        </ul>
+        <nav>
+            <ul>
+                <li class="mobilemenu__list"><a href="./views/computadoras.html">Computadoras</a></li>
+                <li class="mobilemenu__list"><a href="./views/componentes.html">Componentes</a></li>
+                <li class="mobilemenu__list"><a href="./views/accesorios.html">Accesorios</a></li>
+                <li class="mobilemenu__list"><a href="./views/sucursales.html">Sucursales</a></li>
+                <li class="mobilemenu__list"><a href="./views/contacto.html">Contáctanos</a></li>
+                <li class="mobilemenu__list"><a href="./views/quienes-somos.html">Quienes somos</a></li>
+            </ul>
+        </nav>
     </aside>
     <footer class="footer">
         <section class="footer__redes">

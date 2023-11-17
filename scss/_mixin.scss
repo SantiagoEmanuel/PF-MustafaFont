@@ -1,0 +1,20 @@
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin center {
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin box-size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin font-style($size, $weight, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}

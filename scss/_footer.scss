@@ -1,13 +1,13 @@
 /* FOOTER */
 
 .footer {
-    height: 180px;
-    width: 100%;
+    @include box-size(100%, 180px);
     padding: 1rem;
     background-color: $color-secondary;
     display: grid;
-    grid-template-areas: 'redes others' 'creator creator';
-
+    grid-template-areas:
+        'redes others'
+        'creator creator';
 }
 
 .footer__redes {
@@ -16,22 +16,19 @@
 }
 
 .footer__redes__title {
-    font-size: 1rem;
-    font-weight: 600;
-    color: $font-color;
+    @include font-style(1rem, $font-bold, $font-color);
     padding-left: 1.4rem;
 }
 
 .footer__redes__list li {
+    @include font-style(0.875rem, normal, $font-color);
     list-style: none;
-    color: $font-color;
-    font-size: .875rem;
     margin: 10px 0;
 
 }
 
 .footer__redes__list__icon {
-    width: 2rem;
+    width: 32px;
 }
 
 .footer__others {
@@ -42,22 +39,19 @@
 }
 
 .footer__others__title {
-    font-size: 1rem;
-    font-weight: 600;
-    color: $font-color;
+    @include font-style(1rem, $font-bold, $font-color);
 }
 
 .footer__others__list li {
+    @include font-style(0.875rem, normal, $font-color);
     list-style: none;
-    color: $font-color;
-    font-size: .875rem;
     margin: 10px 0;
     margin-right: 10px;
 
 }
 
 .footer__others__list__icon {
-    width: 2rem;
+    width: 32px;
 }
 
 .footer__owner {
@@ -69,6 +63,5 @@
 }
 
 .footer__owner__name {
-    color: $color-tertiary;
-    font-weight: 600;
+    @include font-style(1rem, $font-bold - 100, $color-tertiary);
 }

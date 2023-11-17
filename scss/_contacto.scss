@@ -1,9 +1,7 @@
 .main__contactcontainer {
-    width: 800px;
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
+    @include box-size(800px, 100%);
     gap: 3rem;
-
 }
 
 .main__contactcontainer__contacts li {
@@ -13,26 +11,23 @@
 }
 
 .main__contactcontainer__form {
-    width: 100%;
-
+    @include box-size(100%, 100%);
 }
 
 .main__contactcontainer__form__field {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    @include box-size(100%, 100%);
+    @include flex-column;
     gap: 1rem;
     padding: 1rem;
     border-radius: .5rem;
     margin-bottom: 3rem;
 
     input {
-        width: 100%;
+        @include box-size(100%, 2.5rem);
         border-radius: .5rem;
-        height: 2.5rem;
         border: 2px solid $color-secondary;
         padding: 0 .5rem;
-        font-weight: 600;
+        font-weight: $font-bold - 100;
     }
 
     textarea {
@@ -41,28 +36,26 @@
         border: 2px solid $color-secondary;
         padding: .5rem;
         resize: none;
-        font-weight: 600;
+        font-weight: $font-bold - 100;
     }
 
     button {
+        @include font-style(1.2rem, $font-bold - 100, #000);
         padding: .5rem;
-        font-size: 1.2rem;
         border-radius: .5rem;
         cursor: pointer;
         background-color: $color-tertiary;
-        font-weight: 600;
 
         &:hover {
             background-color: $color-secondary;
             color: $font-color;
         }
     }
-
 }
 
 .main__contactcontainer__form__field__title {
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: $font-bold - 100;
 }
 
 .main__contactcontainer__form__field__fullname {
@@ -72,7 +65,6 @@
 
 .main__contactcontainer__form__field__contenedorduda {
     width: 100%;
-
 }
 
 .main__contactcontainer__form__field__contenedorduda__duda {
@@ -80,5 +72,5 @@
     padding: .5rem;
     border-radius: .5rem;
     border: 2px solid $color-secondary;
-    font-weight: 600;
+    font-weight: $font-bold - 100;
 }
