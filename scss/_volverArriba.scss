@@ -1,0 +1,19 @@
+.main__volver {
+    @include box-size(42px, 42px);
+    @include center;
+    display: none;
+    background-color: $color-tertiary;
+    position: fixed;
+    animation-name: arrowUp;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    border-radius: 50%;
+    border: none;
+    right: 20px;
+
+    i {
+        @include font-style(2rem, $font-bold, $font-color);
+        border: none;
+    }
+}

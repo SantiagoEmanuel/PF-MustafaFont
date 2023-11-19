@@ -3,7 +3,7 @@
     src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
 }
 
-@import "variables", "mixin", "reset", "body", "header", "main", "footer", "sucursales", "nosotros", "contacto", "querys";
+@import "variables", "mixin", "reset", "body", "header", "main", "footer", "sucursales", "nosotros", "contacto", "querys", "animations", "volverArriba";
 
 /* Ocultar la navegación para celular */
 .mobilemenu {

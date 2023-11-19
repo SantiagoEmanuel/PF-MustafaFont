@@ -67,12 +67,6 @@
     padding-top: 2rem;
 }
 
-.main__volver {
-    position: sticky;
-    bottom: 50px;
-    margin-bottom: 25px;
-}
-
 .main__header {
     @include flex-column;
     margin: 3rem 0 0 0;
