@@ -4,7 +4,7 @@
 
 ## Website
 
-[TechZone](https://santiagoemanuel.github.io/PreEntrega2MustafaFont/){:title="TechZone website"}{:target="_blank"}
+[TechZone Website](https://santiagoemanuel.github.io/PreEntrega2MustafaFont/)
 
 ---
 
