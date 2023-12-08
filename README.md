@@ -4,7 +4,7 @@
 
 ## Website
 
-[TechZone Website](https://santiagoemanuel.github.io/PreEntrega3MustafaFont/)
+[TechZone Website](https://tech-zone-pf.netlify.app/)
 
 ---
 
