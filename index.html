@@ -16,7 +16,7 @@
     <!-- BoxIcons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- CSS -->
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 
     <!-- JavaScript para el funcionamiento de la navegación celular -->
     <script src="./js/index.js"></script>
@@ -32,11 +32,11 @@
 
 <body>
     <header class="header" id="header">
-        <h2 class="header__title">
-            <a href="../index.html">
+        <div class="header__title">
+            <a href="./index.html" title="Ir a inicio">
                 <img src="./assets/images/logo/logo.png" alt="Logo de TechZone">
             </a>
-        </h2>
+        </div>
         <nav>
             <ul class="header__navlist">
                 <li><a href="./views/computadoras.html">Computadoras</a></li>
@@ -44,7 +44,7 @@
                 <li><a href="./views/accesorios.html">Accesorios</a></li>
                 <li><a href="./views/sucursales.html">Sucursales</a></li>
                 <li><a href="./views/contacto.html">Contáctanos</a></li>
-                <li><a href="./views/quienes-somos.html">Quienes somos?</a></li>
+                <li><a href="./views/quienes-somos.html">Quienes somos</a></li>
             </ul>
             <button id="menuBtn" class="header__navmobilemenu">
                 <i class='bx bx-menu'></i>
@@ -115,8 +115,8 @@
         </article>
         <section class="main__productcontainer">
             <div>
-                <h2 class="main__productcontainer__title">Computadoras:</h2>
-                <section class="main__productcontainer__section">
+                <h2 class="main__productcontainer__title main__productcontainer__title--margin">Computadoras:</h2>
+                <section class="main__productcontainer__section main__productcontainer__section--padding">
                     <h3>De Escritorio</h3>
                     <div class="main__productcontainer__section__cardcontent">
                         <article class="main__productcontainer__section__cardcontent__card">
@@ -516,7 +516,7 @@
                 </li>
                 <li>
                     LinkedIn
-                    <img src="./assets/images/iconos/linkedin-icon.png" alt="Icono de GitHun"
+                    <img src="./assets/images/iconos/linkedin-icon.png" alt="Icono de LinkedIn"
                         class="footer__others__list__icon">
                 </li>
             </ul>

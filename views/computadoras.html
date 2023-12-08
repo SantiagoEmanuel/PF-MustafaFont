@@ -16,7 +16,7 @@
     <!-- BoxIcons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- CSS -->
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <!-- JavaScript para funcionamiento de la navegación de celular -->
     <script src="../js/index.js"></script>
@@ -32,11 +32,11 @@
 
 <body>
     <header class="header" id="header">
-        <h2 class="header__title">
-            <a href="../index.html">
+        <div class="header__title">
+            <a href="../index.html" title="Ir a inicio">
                 <img src="../assets/images/logo/logo.png" alt="Logo de TechZone">
             </a>
-        </h2>
+        </div>
         <nav>
             <ul class="header__navlist">
                 <li><a href="../index.html">Inicio</a></li>
@@ -45,7 +45,7 @@
                 <li><a href="./accesorios.html">Accesorios</a></li>
                 <li><a href="./sucursales.html">Sucursales</a></li>
                 <li><a href="./contacto.html">Contáctanos</a></li>
-                <li><a href="./quienes-somos.html">Quienes somos?</a></li>
+                <li><a href="./quienes-somos.html">Quienes somos</a></li>
             </ul>
             <button id="menuBtn" class="header__navmobilemenu">
                 <i class="bx bx-menu"></i>
@@ -68,44 +68,56 @@
                 <section class="main__productcontainer__section__cardcontent">
                     <article class="main__productcontainer__section__cardcontent__card">
                         <img src="../assets/images/computadoras/pc-escritorio/pc-escritorio-1.webp"
-                            alt="Computadora gamer">
+                            alt="Computadora de escritorio - intel i5 - 16 GB ram - 1TB SSD - GPU RTX 2080">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Computadora gamer</h3>
+                            <h3>Computadora intel</h3>
+                            <p>Computadora Gamer - intel i5 - 16GB de ram - 1TB SSD - tarjeta gráfica RTX 2080</p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
                         <img src="../assets/images/computadoras/pc-escritorio/pc-escritorio-2.webp"
-                            alt="Computadora gamer">
+                            alt="Computadora de escritorio - intel i7 - 32 GB ram - 1TB SSD - GPU RTX 3060">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Computadora gamer</h3>
+                            <h3>Computadora intel</h3>
+                            <p>Computadora Gamer - intel i7 - 32GB de ram - 1TB SSD - tarjeta gráfica RTX 3060</p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
                         <img src="../assets/images/computadoras/pc-escritorio/pc-escritorio-3.webp"
-                            alt="Computadora gamer">
+                            alt="Computadora de escritorio - intel i7 - 16 GB ram - 1TB HDD - HD Graphic">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Computadora gamer</h3>
+                            <h3>Computadora intel</h3>
+                            <p>Computadora Gamer - intel i7 - 16GB de ram - 1TB HDD - HD graphic</p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
                         <img src="../assets/images/computadoras/pc-escritorio/pc-escritorio-4.webp"
-                            alt="Computadora gamer">
+                            alt="Computadora de escritorio - Ryzen 9 - 64 de ram - 2TB NVMe - NVIDIA 3060">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Computadora gamer</h3>
+                            <h3>Computadora AMD</h3>
+                            <p>
+                                Computadora Gamer - Ryzen 9 - 64 de ram - 2TB NVMe - NVIDIA 3060
+                            </p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
                         <img src="../assets/images/computadoras/pc-escritorio/pc-escritorio-5.jpg"
-                            alt="Computadora gamer">
+                            alt="Computadora de escritorio - intel i7 - 8 de ram - 1TB HDD - HD intel graphic">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Computadora gamer</h3>
+                            <h3>Computadora Intel</h3>
+                            <p>
+                                Computadora de escritorio - intel i7 - 8 de ram - 1TB HDD - HD intel graphic
+                            </p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
                         <img src="../assets/images/computadoras/pc-escritorio/pc-escritorio-6.webp"
-                            alt="Computadora gamer">
+                            alt="Computadora de escritorio - intel i3 - 32 de ram - 240GB SSD - GeForce 2080 TI">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Computadora gamer</h3>
+                            <h3>Computadora Intel</h3>
+                            <p>
+                                Computadora gamer - intel i3 - 32 de ram - 240GB SSD - GeForce 2080
+                            </p>
                         </div>
                     </article>
                 </section>
@@ -114,80 +126,109 @@
                 <h2 class="main__productcontainer__title">Computadoras notebooks</h2>
                 <section class="main__productcontainer__section__cardcontent">
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/computadoras/notebooks/notebook-1.webp" alt="Notebooks gamers">
+                        <img src="../assets/images/computadoras/notebooks/notebook-1.webp"
+                            alt="Notebook TUF - intel i5 - 32 de ram - 240Gb SSD - GeForce 3070">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Computadora notebook gamer</h3>
+                            <h3>Notebook ASUS</h3>
+                            <p>
+                                Notebook TUF - intel i5 - 32 de ram - 240Gb SSD - GeForce 3070
+                            </p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/computadoras/notebooks/notebook-2.webp" alt="Notebooks gamers">
+                        <img src="../assets/images/computadoras/notebooks/notebook-2.webp"
+                            alt="Notebook ZenBook - intel i5 - 16 de ram - 500GB de SSD - Nvidia 3060">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Computadora notebook gamer</h3>
+                            <h3>Notebook ASUS</h3>
+                            <p>
+                                Notebook ZenBook - intel i5 - 16 de ram - 500GB de SSD - Nvidia 3060
+                            </p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/computadoras/notebooks/notebook-3.webp" alt="Notebooks gamers">
+                        <img src="../assets/images/computadoras/notebooks/notebook-3.webp"
+                            alt="Notebook Lenovo - intel i3 - 8 de ram - 240GB de SSD - intel hd graphic<">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Computadora notebook gamer</h3>
+                            <h3>Notebook Lenovo</h3>
+                            <p>Notebook Lenovo - intel i3 - 8 de ram - 240GB de SSD - intel hd graphic</p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/computadoras/notebooks/notebook-4.webp" alt="Notebooks gamers">
+                        <img src="../assets/images/computadoras/notebooks/notebook-4.webp"
+                            alt="Notebook ASUS - intel celeron - 8 de ram - 240GB de SSD - intel hd graphic">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Computadora notebook gamer</h3>
+                            <h3>Notebook ASUS</h3>
+                            <p>Notebook ASUS - intel celeron - 8 de ram - 240GB de SSD - intel hd graphic</p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/computadoras/notebooks/notebook-5.webp" alt="Notebooks gamers">
+                        <img src="../assets/images/computadoras/notebooks/notebook-5.webp"
+                            alt="Notebook IdealPAd - Ryzen 3 - 16 de ram - 500GB de SSD - intel hd graphic">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Computadora notebook gamer</h3>
+                            <h3>Notebook Lenovo</h3>
+                            <p>Notebook IdealPAd - Ryzen 3 - 16 de ram - 500GB de SSD - intel hd graphic</p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/computadoras/notebooks/notebook-6.webp" alt="Notebooks gamers">
+                        <img src="../assets/images/computadoras/notebooks/notebook-6.webp"
+                            alt="notebook X515e - intel i3 - 4 de ram - 256GB de SSD - intel hd graphic">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Computadora notebook gamer</h3>
+                            <h3>Notebook ASUS</h3>
+                            <p>notebook X515e - intel i3 - 4 de ram - 256GB de SSD - intel hd graphic</p>
                         </div>
                     </article>
                 </section>
             </div>
             <div>
                 <h2 class="main__productcontainer__title">Computadoras todo en uno</h2>
-                <section class="main__productcontainer__section__cardcontent">
+                <section
+                    class="main__productcontainer__section__cardcontent main__productcontainer__section__cardcontent--margin">
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/computadoras/todo-en-uno/ten-1.webp" alt="Computadoras todo en uno">
+                        <img src="../assets/images/computadoras/todo-en-uno/ten-1.webp"
+                            alt="iMac M1 - 16 de ram - SSD 240Gb">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Computadoras todo en uno</h3>
+                            <h3>iMac</h3>
+                            <p>M1 - 16 de ram - SSD 240GB</p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/computadoras/todo-en-uno/ten-2.webp" alt="Computadoras todo en uno">
+                        <img src="../assets/images/computadoras/todo-en-uno/ten-2.webp"
+                            alt="Lenovo all in one - i7 - 32 de ram - 4k - SSD 1TB">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Computadoras todo en uno</h3>
+                            <h3>Lenovo All in one</h3>
+                            <p>intel core i7 - 32Gb de ram - 4k - SSD 1TB</p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/computadoras/todo-en-uno/ten-3.webp" alt="Computadoras todo en uno">
+                        <img src="../assets/images/computadoras/todo-en-uno/ten-3.webp"
+                            alt="HP todo en uno - Ryzen 5 - 16Gb de ram - 960Gb SSD">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Computadoras todo en uno</h3>
+                            <h3>HP todo en uno</h3>
+                            <p>AMD Ryzen 5 - 16Gb de ram - 960Gb SSD</p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/computadoras/todo-en-uno/ten-4.webp" alt="Computadoras todo en uno">
+                        <img src="../assets/images/computadoras/todo-en-uno/ten-4.webp"
+                            alt="HP todo en uno- intel core i5 - 8Gb de ram - 500Gb NVMe 2.0">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Computadoras todo en uno</h3>
+                            <h3>HP Todo en uno</h3>
+                            <p>Intel core i5 - 8Gb de ram - 500Gb NVMe 2.0</p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/computadoras/todo-en-uno/ten-5.webp" alt="Computadoras todo en uno">
+                        <img src="../assets/images/computadoras/todo-en-uno/ten-5.webp"
+                            alt="Primux todo en uno - intel core i3 - 8gb de ram - 1tb hdd">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Computadoras todo en uno</h3>
+                            <h3>Primux todo en uno</h3>
+                            <p>intel core i3 - 8gb de ram - 1tb hdd</p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/computadoras/todo-en-uno/ten-6.webp" alt="Computadoras todo en uno">
+                        <img src="../assets/images/computadoras/todo-en-uno/ten-6.webp"
+                            alt="NextMart todo en uno - AMD Ryzen 7 - 64gb de ram - 1TB NVMe 2.0">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Computadoras todo en uno</h3>
+                            <h3>NextMart todo en uno</h3>
+                            <p>AMD Ryzen 7 - 64gb de ram - 1TB NVMe 2.0</p>
                         </div>
                     </article>
                 </section>
@@ -239,7 +280,7 @@
                 </li>
                 <li>
                     LinkedIn
-                    <img src="../assets/images/iconos/linkedin-icon.png" alt="Icono de GitHun"
+                    <img src="../assets/images/iconos/linkedin-icon.png" alt="Icono de LinkedIn"
                         class="footer__others__list__icon">
                 </li>
             </ul>

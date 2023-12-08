@@ -27,10 +27,18 @@
     margin-bottom: 20px;
 }
 
+.main__productcontainer__title--margin {
+    margin-top: 4rem;
+}
+
 .main__productcontainer__section {
     @include flex-column;
     gap: 2rem;
     padding: 3rem 0;
+}
+
+.main__productcontainer__section--padding {
+    padding: 1rem 0;
 }
 
 .main__productcontainer__section h3 {
@@ -42,6 +50,10 @@
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     gap: 2rem;
+}
+
+.main__productcontainer__section__cardcontent--margin {
+    margin-bottom: 3rem;
 }
 
 .main__productcontainer__section__cardcontent__card {
@@ -89,14 +101,14 @@
     width: 100%;
     display: flex;
     gap: 1rem;
-    background-color: #777;
+    background-color: $color-secondary;
     border-radius: .5rem;
 
     input {
         @include box-size(100%, 2.4rem);
         border-radius: .5rem;
         padding: 0 .5rem;
-        border: 2px solid #777;
+        border: 2px solid $color-secondary;
         outline: none;
         background-color: transparent;
         color: $font-color;
@@ -110,6 +122,6 @@
         @include box-size(100px, 2.4rem);
         border-radius: .5rem;
         padding: $btn-padding;
-        border: 2px solid #777;
+        border: 2px solid $color-secondary;
     }
 }

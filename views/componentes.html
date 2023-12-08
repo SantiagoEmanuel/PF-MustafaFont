@@ -16,7 +16,7 @@
     <!-- BoxIcons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- CSS -->
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <!-- JavaScript para funcionamiento de la navegación de celular -->
     <script src="../js/index.js"></script>
@@ -31,11 +31,11 @@
 
 <body>
     <header class="header" id="header">
-        <h2 class="header__title">
-            <a href="../index.html">
+        <div class="header__title">
+            <a href="../index.html" title="Ir a inicio">
                 <img src="../assets/images/logo/logo.png" alt="Logo de TechZone">
             </a>
-        </h2>
+        </div>
         <nav>
             <ul class="header__navlist">
                 <li><a href="../index.html">Inicio</a></li>
@@ -44,7 +44,7 @@
                 <li><a href="./accesorios.html">Accesorios</a></li>
                 <li><a href="./sucursales.html">Sucursales</a></li>
                 <li><a href="./contacto.html">Contáctanos</a></li>
-                <li><a href="./quienes-somos.html">Quienes somos?</a></li>
+                <li><a href="./quienes-somos.html">Quienes somos</a></li>
             </ul>
             <button id="menuBtn" class="header__navmobilemenu">
                 <i class="bx bx-menu"></i>
@@ -66,39 +66,51 @@
                 <h2 class="main__productcontainer__title">Procesadores</h2>
                 <section class="main__productcontainer__section__cardcontent">
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/componentes/procesadores/intel-celeron.webp" alt="Procesador intel">
+                        <img src="../assets/images/componentes/procesadores/intel-celeron.webp"
+                            alt="Procesador intel celeron - 2.4Ghz">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Procesador intel celeron</h3>
+                            <h3>Procesador intel</h3>
+                            <p>Celeron - 2.4Ghz - 50mb cache - intel graphic</p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/componentes/procesadores/intel-i3.webp" alt="Procesador intel">
+                        <img src="../assets/images/componentes/procesadores/intel-i3.webp"
+                            alt="Procesador intel i3 - 3.5Ghz">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Procesador intel i3 - novena generación</h3>
+                            <h3>Procesador intel</h3>
+                            <p>Core i3 - 3.5Ghz - 75mb cache - intel hd graphic</p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/componentes/procesadores/intel-i5.webp" alt="Procesador intel">
+                        <img src="../assets/images/componentes/procesadores/intel-i5.webp"
+                            alt="Procesador intel i5 - 3.7Ghz">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Procesador intel i5 - novena generación</h3>
+                            <h3>Procesador intel</h3>
+                            <p>Core i5 - 3.7Ghz - 75mb cache - intel hd graphic</p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/componentes/procesadores/intel-i7.webp" alt="Procesador intel">
+                        <img src="../assets/images/componentes/procesadores/intel-i7.webp"
+                            alt="Procesador intel i7 - 3.9Ghz">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Procesador intel i7 - novena generación</h3>
+                            <h3>Procesador intel</h3>
+                            <p>Core i7 - 3.9Ghz - 75mb cache - intel hd graphic</p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/componentes/procesadores/intel-i9.webp" alt="Procesador intel">
+                        <img src="../assets/images/componentes/procesadores/intel-i9.webp"
+                            alt="Procesador intel i9 - 4.3Ghz">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Procesador intel i9 - novena generación</h3>
+                            <h3>Procesador intel</h3>
+                            <p>Core i9 - 4.3Ghz - 100mb cache - intel hd graphic</p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/componentes/procesadores/amd-3.jpg" alt="Procesador amd">
+                        <img src="../assets/images/componentes/procesadores/amd-3.jpg"
+                            alt="Procesador amd Ryzen 3 - 3.7Ghz">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Procesador AMD Ryzen 3 - tercera generación</h3>
+                            <h3>Procesador AMD</h3>
+                            <p>Ryzen 3 - 3.7Ghz - 100mb cache - Radeon Vega 8 Graphic</p>
                         </div>
                     </article>
                 </section>
@@ -107,39 +119,53 @@
                 <h2 class="main__productcontainer__title">Placas madre</h2>
                 <section class="main__productcontainer__section__cardcontent">
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/componentes/placas-madre/placa-madre-amd-1.webp" alt="Placa madre">
+                        <img src="../assets/images/componentes/placas-madre/placa-madre-amd-1.webp"
+                            alt="Placa madre MSI X299 PRO - intel">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Placa madre para procesador AMD Ryzen</h3>
+                            <h3>Placa madre MSI</h3>
+                            <p>
+                                X299 PRO - Socked intel - max 128gb ram
+                            </p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/componentes/placas-madre/placa-madre-amd-2.webp" alt="Placa madre">
+                        <img src="../assets/images/componentes/placas-madre/placa-madre-amd-2.webp"
+                            alt="Placa madre ROG TRX40 - AMD">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Placa madre para procesador AMD Ryzen</h3>
+                            <h3>Placa madre ROG</h3>
+                            <p>TRX40 - Socked AMD Ryzen - max 64gb de ram</p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/componentes/placas-madre/placa-madre-amd-3.webp" alt="Placa madre">
+                        <img src="../assets/images/componentes/placas-madre/placa-madre-amd-3.webp"
+                            alt="Placa madre AORUS B550 PRO AC - AMD">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Placa madre para procesador AMD Ryzen</h3>
+                            <h3>Placa madre AORUS</h3>
+                            <p>B550 PRO AC - Socked AMD Ryzen - max 128Gb de ram</p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/componentes/placas-madre/placa-madre-amd-4.webp" alt="Placa madre">
+                        <img src="../assets/images/componentes/placas-madre/placa-madre-amd-4.webp"
+                            alt="Placa madre Gigabyte X670 GAMING X AX - intel">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Placa madre para procesador AMD Ryzen</h3>
+                            <h3>Placa madre Gigabyte</h3>
+                            <p>X670 GAMING X AX - Socked intel - max 248Gb de ram</p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/componentes/placas-madre/placa-madre-intel-1.webp" alt="Placa madre">
+                        <img src="../assets/images/componentes/placas-madre/placa-madre-intel-1.webp"
+                            alt="Placa madre MSI PRO M610M-8 - intel">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Placa madre para procesador intel</h3>
+                            <h3>Placa madre MSI</h3>
+                            <p>PRO M610M-8 DDR4 - Socked intel - max 64Gb de ram</p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/componentes/placas-madre/placa-madre-intel-2.webp" alt="Placa madre">
+                        <img src="../assets/images/componentes/placas-madre/placa-madre-intel-2.webp"
+                            alt="Placa madre BioStark TB160 PRO 2.0 - intel">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Placa madre para procesador intel</h3>
+                            <h3>Placa madre BioStark</h3>
+                            <p>TB160 PRO 2.0 - Socked intel - max 32Gb de ram</p>
                         </div>
                     </article>
                 </section>
@@ -148,39 +174,53 @@
                 <h2 class="main__productcontainer__title">Memorias Ram</h2>
                 <section class="main__productcontainer__section__cardcontent">
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/componentes/memorias-ram/memoria-ram-1.webp" alt="Memoria ram">
+                        <img src="../assets/images/componentes/memorias-ram/memoria-ram-1.webp"
+                            alt="Memoria ram XPG DDR4 - 32Gb - 3200Ghz ">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Memoria ram</h3>
+                            <h3>RAM XPG</h3>
+                            <p>DDR4 16 x 2 (32Gb) 3200Ghz</p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/componentes/memorias-ram/memoria-ram-2.webp" alt="Memoria ram">
+                        <img src="../assets/images/componentes/memorias-ram/memoria-ram-2.webp"
+                            alt="Memoria ram vengeance DDR5 - 64 - 5000Ghz">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Memoria ram</h3>
+                            <h3>RAM VENGEANCE</h3>
+                            <p>DDR5 32 x 2 (64Gb) 5000Ghz</p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/componentes/memorias-ram/memoria-ram-3.webp" alt="Memoria ram">
+                        <img src="../assets/images/componentes/memorias-ram/memoria-ram-3.webp"
+                            alt="Memoria ram HyperX DDR4 - 64 - 3000Ghz">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Memoria ram</h3>
+                            <h3>RAM HyperX</h3>
+                            <p>
+                                DDR4 16 x 4 (64GB) 3000Ghz
+                            </p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/componentes/memorias-ram/memoria-ram-4.webp" alt="Memoria ram">
+                        <img src="../assets/images/componentes/memorias-ram/memoria-ram-4.webp"
+                            alt="Memoria ram corsair dominator DDR4 - 128 - 3200Ghz">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Memoria ram</h3>
+                            <h3>RAM Corsair</h3>
+                            <p>DDR4 64 x 2 (128GB) 3200Ghz</p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/componentes/memorias-ram/memoria-ram-5.webp" alt="Memoria ram">
+                        <img src="../assets/images/componentes/memorias-ram/memoria-ram-5.webp"
+                            alt="Memoria ram HP DDR4 - 8 - 1600Ghz">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Memoria ram</h3>
+                            <h3>RAM HP</h3>
+                            <p>DDR4 4 x 2 (8Gb) 1600Ghz</p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/componentes/memorias-ram/memoria-ram-6.webp" alt="Memoria ram">
+                        <img src="../assets/images/componentes/memorias-ram/memoria-ram-6.webp"
+                            alt="Memoria ram HyperX DDR5 - 32 - 6000Ghz">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Memoria ram</h3>
+                            <h3>RAM HyperX</h3>
+                            <p>DDR5 16 x 2 (32Gb) 6000Ghz</p>
                         </div>
                     </article>
                 </section>
@@ -189,80 +229,104 @@
                 <h2 class="main__productcontainer__title">Almacenamiento</h2>
                 <section class="main__productcontainer__section__cardcontent">
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/componentes/almacenamiento/hdd-1.webp" alt="Almacenamiento hdd">
+                        <img src="../assets/images/componentes/almacenamiento/hdd-1.webp"
+                            alt="Almacenamiento wd blue hdd - 2tb">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Almacenamiento HDD</h3>
+                            <h3>Almacenamiento WD Blue</h3>
+                            <p>HDD - 2TB - 60mbs</p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/componentes/almacenamiento/hdd-2.webp" alt="Almacenamiento hdd">
+                        <img src="../assets/images/componentes/almacenamiento/hdd-2.webp"
+                            alt="Almacenamiento SEAGATE IronWolf hdd - 14tb">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Almacenamiento HDD</h3>
+                            <h3>Almacenamiento SEAGATE</h3>
+                            <p>IronWolf pro - 14TB - 90mbs</p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/componentes/almacenamiento/hdd-3.webp" alt="Almacenamiento hdd">
+                        <img src="../assets/images/componentes/almacenamiento/hdd-3.webp"
+                            alt="Almacenamiento wd blue hdd - 1tb">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Almacenamiento HDD</h3>
+                            <h3>Almacenamiento WD Blue</h3>
+                            <p>HDD - 1TB - 55mbs</p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/componentes/almacenamiento/hdd-4.webp" alt="Almacenamiento hdd">
+                        <img src="../assets/images/componentes/almacenamiento/hdd-4.webp"
+                            alt="Almacenamiento SEAGATE IronWolf hdd - 8tb">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Almacenamiento HDD</h3>
+                            <h3>Almacenamiento SEAGATE</h3>
+                            <p>IronWolf - 8TB - 60mbs</p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/componentes/almacenamiento/ssd-1.webp" alt="Almacenamiento ssd">
+                        <img src="../assets/images/componentes/almacenamiento/ssd-1.webp"
+                            alt="Almacenamiento wd red SA500 ssd - 500gb">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Almacenamiento SSD</h3>
+                            <h3>Almacenamiento WD Red</h3>
+                            <p>SA500 - 500Gb - 300mbs</p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/componentes/almacenamiento/ssd-2.webp" alt="Almacenamiento sdd">
+                        <img src="../assets/images/componentes/almacenamiento/ssd-2.webp"
+                            alt="Almacenamiento EMTEC sdd - 960gb">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Almacenamiento SSD</h3>
+                            <h3>Almacenamiento EMTEC</h3>
+                            <p>Power Plus - 960Gb - 450mbs</p>
                         </div>
                     </article>
                 </section>
             </div>
             <div>
                 <h2 class="main__productcontainer__title">Gabinetes</h2>
-                <section class="main__productcontainer__section__cardcontent">
+                <section
+                    class="main__productcontainer__section__cardcontent main__productcontainer__section__cardcontent--margin">
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/componentes/gabinetes/gabinete-1.webp" alt="Gabinete gamer">
+                        <img src="../assets/images/componentes/gabinetes/gabinete-1.webp"
+                            alt="Gabinete gamer RGB Full-Tower">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Gabinete</h3>
+                            <h3>Gabinete Corsair</h3>
+                            <p>Gabinete Full-Tower - RGB - ventilador RGB</p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/componentes/gabinetes/gabinete-2.webp" alt="Gabinete gamer">
+                        <img src="../assets/images/componentes/gabinetes/gabinete-2.webp"
+                            alt="Gabinete gamer GameMax low cost mid-tower">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Gabinete</h3>
+                            <h3>Gabinete GameMax</h3>
+                            <p>Gabinete mid-tower - low cost</p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/componentes/gabinetes/gabinete-3.webp" alt="Gabinete gamer">
+                        <img src="../assets/images/componentes/gabinetes/gabinete-3.webp"
+                            alt="Gabinete gamer Thermaltake Full-Tower">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Gabinete</h3>
+                            <h3>Gabinete Thermaltake</h3>
+                            <p>Gabinete gamer Full-Tower gamer</p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/componentes/gabinetes/gabinete-4.webp" alt="Gabinete gamer">
+                        <img src="../assets/images/componentes/gabinetes/gabinete-4.webp"
+                            alt="Gabinete Cousar low-tower black">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Gabinete</h3>
+                            <h3>Gabinete Cousar</h3>
+                            <p>Gabinete low-tower</p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/componentes/gabinetes/gabinete-5.webp" alt="Gabinete gamer">
+                        <img src="../assets/images/componentes/gabinetes/gabinete-5.webp"
+                            alt="Gabinete gamer TomaHawk AeroCool mid-tower">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Gabinete</h3>
+                            <h3>Gabinete TomaHawk</h3>
+                            <p>Gabinete mid-tower - AeroCool - RGB</p>
                         </div>
                     </article>
                     <article class="main__productcontainer__section__cardcontent__card">
-                        <img src="../assets/images/componentes/gabinetes/gabinete-6.webp" alt="Gabinete gamer">
+                        <img src="../assets/images/componentes/gabinetes/gabinete-6.webp" alt="Gabinete low-tower">
                         <div class="main__productcontainer__section__cardcontent__card__info">
-                            <h3>Gabinete</h3>
+                            <h3>Gabinete HP</h3>
+                            <p>Gabinete low-tower</p>
                         </div>
                     </article>
                 </section>
@@ -314,7 +378,7 @@
                 </li>
                 <li>
                     LinkedIn
-                    <img src="../assets/images/iconos/linkedin-icon.png" alt="Icono de GitHun"
+                    <img src="../assets/images/iconos/linkedin-icon.png" alt="Icono de LinkedIn"
                         class="footer__others__list__icon">
                 </li>
             </ul>

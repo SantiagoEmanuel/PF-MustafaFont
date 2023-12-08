@@ -25,6 +25,10 @@
         margin: 1rem;
     }
 
+    .main__productcontainer__title--margin {
+        margin-top: 4rem;
+    }
+
     .main__productcontainer__section {
         gap: 1rem;
         margin-top: .5rem;
@@ -211,6 +215,10 @@
         gap: 1rem;
     }
 
+    .main__productcontainer__section__cardcontent__card {
+        @include box-size(290px, 450px);
+    }
+
     .main__contactcontainer__form__field__fullname {
         flex-direction: column;
     }
@@ -275,7 +283,10 @@
         margin: 0 2rem;
     }
 
-
+    .main__productcontainer__section__cardcontent__card img {
+        height: 250px;
+        width: 200px;
+    }
 
     .main__contactcontainer {
         width: 100%;
